@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer-container">
+            <container name="footer">
+                <referenceBlock name="store_switcher" remove="true"/>
+                <referenceBlock name="footer_links" remove="true"/>
+                <referenceBlock name="copyright" remove="true"/>
+                <referenceBlock name="report.bugs" remove="true" />
+                <block class="Magento\Framework\View\Element\Template" name="gw_footer_top" template="Gw_Misc::footer-top.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="gw_footer_bottom" template="Gw_Misc::footer-bottom.phtml" after="gw_footer_top"/>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
