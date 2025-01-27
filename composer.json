@@ -2,7 +2,8 @@
     "name": "gwharton/module-footer",
     "type": "magento2-module",
     "require": {
-        "magento/framework": "*"
+        "magento/framework": "*",
+        "stripe/module-payments": "*"
     },
     "config": {
         "sort-packages": true
